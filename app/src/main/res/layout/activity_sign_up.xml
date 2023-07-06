@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white_greyish">
+
+<TextView
+    android:id="@+id/signUpText"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="@string/signUp"
+    android:textColor="#2B304C"
+    android:textSize="25sp"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/fullName"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/transparent"
+    android:drawableLeft="@drawable/user"
+    android:drawablePadding="8dp"
+    android:gravity="center_vertical"
+    android:hint="@string/fullName"
+    android:inputType="textCapWords"
+    android:padding="10dp"
+    android:singleLine="true"
+    android:textColor="#2B304C"
+    android:textColorHint="#2B304C"
+    android:textSize="16sp" />
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1px"
+    android:background="#2B304C" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/gender"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/gender"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="Select Gender :"
+            android:textColor="#2B304C"
+            android:textColorHint="#2B304C"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="244dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/gender" />
+
+    </RelativeLayout>
+
+
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1px"
+    android:background="#2B304C"/>
+
+<EditText
+    android:id="@+id/age"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/transparent"
+    android:drawableLeft="@drawable/age"
+    android:drawablePadding="8dp"
+    android:gravity="center_vertical"
+    android:hint="@string/age"
+    android:inputType="number"
+    android:padding="10dp"
+    android:singleLine="true"
+    android:textColor="#2B304C"
+    android:textColorHint="#2B304C"
+    android:textSize="16sp" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#2B304C"/>
+
+<EditText
+    android:id="@+id/password"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/transparent"
+    android:drawableLeft="@drawable/password"
+    android:drawablePadding="8dp"
+    android:gravity="center_vertical"
+    android:hint="@string/passowrd"
+    android:inputType="textPassword"
+    android:padding="10dp"
+    android:singleLine="true"
+    android:textColor="#2B304C"
+    android:textColorHint="#2B304C"
+    android:textSize="16sp" />
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1px"
+    android:background="#2B304C" />
+
+<EditText
+    android:id="@+id/confirmPassword"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/transparent"
+    android:drawableLeft="@drawable/confirm_password"
+    android:drawablePadding="8dp"
+    android:gravity="center_vertical"
+    android:hint="@string/confirmPassword"
+    android:inputType="textPassword"
+    android:padding="10dp"
+    android:singleLine="true"
+    android:textColor="#2B304C"
+    android:textColorHint="#2B304C"
+    android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#2B304C"/>
+
+    <CheckBox
+        android:id="@+id/terms_conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/terms_conditions"
+        android:textColor="#2B304C"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_selector"
+        android:padding="3dp"
+        android:text="@string/signUp"
+        android:textColor="@color/white_greyish"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:backgroundTint="#2B304C"/>
+
+<TextView
+    android:id="@+id/already_user"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="@string/already_user"
+    android:textColor="#2B304C"
+    android:textSize="15sp"
+    android:onClick="HeadToLogin"/>
+
+</LinearLayout>
+
+

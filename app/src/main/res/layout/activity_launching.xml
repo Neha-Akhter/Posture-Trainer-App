@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B304C"
+    android:orientation="vertical"
+    tools:context=".LaunchingActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+        <View
+            android:id="@+id/line0"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#2B304C" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/line0"
+            android:background="@color/white_greyish" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="10dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/line1"
+            android:background="@color/white_greyish" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="10dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/line2"
+            android:background="@color/white_greyish" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="10dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/line3"
+            android:background="@color/white_greyish" />
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="10dp"
+            android:layout_height="220dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/line4"
+            android:background="@color/white_greyish" />
+
+        <View
+            android:id="@+id/line6"
+            android:layout_width="10dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/line5"
+            android:background="@color/white_greyish" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="198dp"
+            android:layout_below="@id/line3"
+            android:layout_marginTop="-11dp"
+            android:fontFamily="sans-serif-medium"
+
+            android:padding="27dp"
+            android:text="  Smart\n Posture "
+            android:textColor="@color/white"
+            android:textSize="45sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.547"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv1"
+            android:layout_alignTop="@+id/tv1"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="142dp"
+            android:layout_marginEnd="229dp"
+            android:layout_marginBottom="-158dp"
+            android:indeterminate="true"
+            android:max="100"
+            android:progress="1" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="0dp"
+        android:background="#2B304C"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_greyish">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fx_btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="67dp"
+        android:text="_______________________________"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2B304C"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="123dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="VIEW YOUR DAILY STATISTICS"
+        android:textAlignment="center"
+
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/fx_btn"
+        app:backgroundTint="#2B304C"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="#1E4941"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/bx_btn"
+        android:text="Forward X Graph" />
+
+
+
+    <Button
+        android:id="@+id/bx_btn"
+        app:backgroundTint="#2B304C"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="#1E4941"
+        android:layout_centerInParent="true"
+        android:text="Backward X Graph" />
+
+    <Button
+        android:id="@+id/ly_btn"
+        app:backgroundTint="#2B304C"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="#1E4941"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bx_btn"
+        android:text="Left Y Graph" />
+
+    <Button
+        android:id="@+id/ry_btn"
+        app:backgroundTint="#2B304C"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="#1E4941"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ly_btn"
+        android:text="Right Y Graph" />
+
+</RelativeLayout>

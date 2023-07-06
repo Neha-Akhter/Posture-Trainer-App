@@ -1,0 +1,44 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "date": {
+            "bsonType": "string"
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "negative_x": {
+            "bsonType": "int"
+        },
+        "negative_y": {
+            "bsonType": "int"
+        },
+        "positive_x": {
+            "bsonType": "int"
+        },
+        "positive_y": {
+            "bsonType": "int"
+        },
+        "time": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "name",
+        "date",
+        "time",
+        "positive_x",
+        "positive_y",
+        "negative_x",
+        "negative_y"
+    ],
+    "title": "Angle"
+}
