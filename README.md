@@ -36,3 +36,11 @@ Check the project's build.gradle files to ensure it has the necessary dependenci
 ### 4. Build and Install
 
 Connect your Android device to your computer or use an emulator. Then, click the "Run" button to build and install the app on your device. After the installation is complete, you can run the app on your device.
+
+
+## Documentation
+
+For a more in-depth understanding of this project, including detailed explanations, methodologies, and results, please refer to this comprehensive project report. The report provides extensive insights and is available at the following link:
+
+[Project Report](https://github.com/Neha-Akhter/Posture-Trainer-App/blob/master/Project-report.pdf)
+
